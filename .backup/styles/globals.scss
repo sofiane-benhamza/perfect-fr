@@ -1,0 +1,59 @@
+@import url("/css/templatemo-grad-school.css");
+
+.body {
+    padding: 0;
+    margin: 0;
+    background-color: #162238;
+    min-height: 100vh !important;
+}
+
+:root {
+    --sea:#162238;
+    --main-color: orange;
+}
+a {
+    text-decoration: none !important;
+}
+
+.hover-up {
+    transition: transform 0.3s ease-in-out;
+    z-index: 0;
+
+}
+
+.hover-up:hover {
+    transform: translateY(-30px);
+}
+
+
+.teachers-hover{
+    background-color: transparent;
+    transition: .2s all;
+    color: white;
+}
+.teachers-hover:hover {
+   background-color: white;
+   color: var(--sea);
+}
+
+.cursor-pointer:hover {
+    cursor: pointer;
+}
+
+.bg-sea {
+    background-color: var(--sea);
+    color: white;
+    border: 1px solid white;
+}
+.min-h-100 {
+   min-height: 100vh;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 11;
+  }
+  
