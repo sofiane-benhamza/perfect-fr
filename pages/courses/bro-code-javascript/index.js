@@ -20,7 +20,7 @@ export default function Home() {
 
     const getVideos = async () => {
         try {
-            const response = await fetch("http://localhost:8000/stream_video/names/?", {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_ADDR}stream_video/names/?`, {
                 method: "GET",
             });
             const data = await response.json();
@@ -39,7 +39,7 @@ export default function Home() {
             ...videoJsOptions,
             sources: [
                 {
-                    src: `http://localhost:8000/stream_video/videos/?video=${selectedVideo}`,
+                    src: `${process.env.NEXT_PUBLIC_BACKEND_ADDR}stream_video/videos/?video=${selectedVideo}`,
                     type: "video/mp4",
                 },
             ],
